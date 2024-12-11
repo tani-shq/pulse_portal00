@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Your Case Study</title>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #eef2f3;
+        }
+        h1 {
+            color: #222;
+            margin-bottom: 20px;
+        }
+        form {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+        input[type="file"], input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Submit Your Case Study</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="case-title">Case Study Title</label>
+        <input type="text" id="case-title" name="case-title" placeholder="Enter a compelling title" required>
+
+        <label for="case-description">Brief Description</label>
+        <textarea id="case-description" name="case-description" rows="4" placeholder="Provide a short summary" required></textarea>
+
+        <label for="case-file">Upload Your File</label>
+        <input type="file" id="case-file" name="case-file" accept=".pdf,.doc,.docx" required>
+
+        <button type="submit">Upload Case Study</button>
+    </form>
+
+</body>
+</html>
