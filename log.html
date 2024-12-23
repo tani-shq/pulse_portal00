@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,17 @@
             box-sizing: border-box;
             font-family: Arial, sans-serif;
         }
+        
+        h1 {
+            font-size: 25px;
+            margin-left: 20px;
+            margin-top: 30px;
+            color: white;
+            position:absolute;
+            top: 0;
+            left: 0;
+        }
+
 
         body {
             display: flex;
@@ -110,63 +122,103 @@
             text-decoration: none;
             cursor: pointer;
         }
+
         body {
-    background: linear-gradient(45deg, #3700ff, #ee0509);
-}
+            background: linear-gradient(45deg, #3700ff, #ee0509);
+        }
+
+        .navbar {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 20px;
+            display: flex;
+            gap: 20px;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #ffffff;
+        }
     </style>
 </head>
-<body>
-    <div class="container">
-        <div class="forms-wrapper">
-            <!-- Login Form -->
-            <div class="form-container login">
-                <h2>Login</h2>
-                <form>
-                    <div class="input-group">
-                        <input type="email" placeholder="Email" required>
-                    </div>
-                    <div class="input-group">
-                        <input type="password" placeholder="Password" required>
-                    </div>
-                    <button type="submit">Login</button>
-                    <div class="toggle-form">
-                        <span>Don't have an account? </span>
-                        <a onclick="toggleForm()">Sign up</a>
-                    </div>
-                </form>
-            </div>
 
-            <!-- Signup Form -->
-            <div class="form-container signup">
-                <h2>Sign Up</h2>
-                <form>
-                    <div class="input-group">
-                        <input type="text" placeholder="Full Name" required>
-                    </div>
-                    <div class="input-group">
-                        <input type="email" placeholder="Email" required>
-                    </div>
-                    <div class="input-group">
-                        <input type="password" placeholder="Password" required>
-                    </div>
-                    <div class="input-group">
-                        <input type="password" placeholder="Confirm Password" required>
-                    </div>
-                    <button type="submit">Sign Up</button>
-                    <div class="toggle-form">
-                        <span>Already have an account? </span>
-                        <a onclick="toggleForm()">Login</a>
-                    </div>
-                </form>
-            </div>
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Right Corner Navigation</title>
+</head>
+<h1 style="font-size: 25px; margin-left: 5px;margin-bottom: 40px; color: white;">Pulse Portal</h1>
+
+<body style="background: linear-gradient height 100vh; margin: 0;">
+    <div class="navbar">
+        <a href="/blog.html"
+            style=" text-decoration: none; font-size: 20px; font-weight: bold; padding: 10px 20px; border-radius: 5px; ">Home</a>
+        <a href="https://www.nashtechglobal.com/#contact-us-form"
+            style=" text-decoration: none; font-size: 20px; font-weight: bold; padding: 10px 20px; border-radius: 5px;">Contact</a>
     </div>
 
-    <script>
-        function toggleForm() {
-            const formsWrapper = document.querySelector('.forms-wrapper');
-            formsWrapper.classList.toggle('show-signup');
-        }
-    </script>
-</body>
+    <body>
+        <div class="container">
+            <div class="forms-wrapper">
+                <!-- Login Form -->
+                <div class="form-container login">
+                    <h2>Login</h2>
+                    <form>
+                        <div class="input-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="password" placeholder="Password" required>
+                        </div>
+                        <button type="submit">Login</button>
+                        <div class="toggle-form">
+                            <span>Don't have an account? </span>
+                            <a onclick="toggleForm()">Sign up</a>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Signup Form -->
+                <div class="form-container signup">
+                    <h2>Sign Up</h2>
+                    <form>
+                        <div class="input-group">
+                            <input type="text" placeholder="Full Name" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="password" placeholder="Password" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="password" placeholder="Confirm Password" required>
+                        </div>
+                        <button type="submit">Sign Up</button>
+                        <div class="toggle-form">
+                            <span>Already have an account? </span>
+                            <a onclick="toggleForm()">Login</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function toggleForm() {
+                const formsWrapper = document.querySelector('.forms-wrapper');
+                formsWrapper.classList.toggle('show-signup');
+            }
+        </script>
+    </body>
+
 </html>
