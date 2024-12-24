@@ -8,14 +8,44 @@
     <style>
         /* General Styles */
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f9f9fb;
+            background: linear-gradient(45deg, #3700ff, #ee0509);
             margin: 0;
-            padding: 0;
-            color: #333;
+            font-family: Arial, sans-serif;
         }
 
-        /* Container Styles */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav li {
+            display: inline;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            font-size: 24px;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
         .container {
             max-width: 800px;
             margin: 50px auto;
@@ -26,7 +56,6 @@
             line-height: 1.6;
         }
 
-        /* Heading Styles */
         h1 {
             font-size: 2.5rem;
             color: #2b6cb0;
@@ -35,7 +64,6 @@
             font-weight: bold;
         }
 
-        /* Paragraph Styles */
         p {
             font-size: 1.2rem;
             color: #555555;
@@ -43,25 +71,17 @@
             line-height: 1.8;
         }
 
-        /* Link Styling */
-        a {
-            color: #2b6cb0;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* Hover Effect */
-        .container:hover {
-            transform: scale(1.02);
-            transition: all 0.3s ease-in-out;
-        }
-
-        /* Responsive Design */
         @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
             .container {
                 margin: 20px;
                 padding: 15px;
@@ -79,6 +99,14 @@
 </head>
 
 <body>
+    <nav>
+        <img src="Image/logo nashtech.png" alt="Logo" class="logo">
+        <ul>
+            <li><a href="/blog.html">Home</a></li>
+            <li><a href="https://www.nashtechglobal.com/#contact-us-form">Contact</a></li>
+            <li><a href="log.html">Login</a></li>
+        </ul>
+    </nav>
     <div class="container">
         <h1>Just Eat’s DevOps since 2010</h1>
         <p>
