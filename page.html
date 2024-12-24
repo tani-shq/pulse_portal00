@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <body>
+        <img src="Image/logo.png" alt="Logo" class="logo">
             <nav style="display: flex; gap: 25px;">
                 <a href="/blog.html" style=" text-decoration: none; font-size: 24px; font-weight: bold; padding: 10px 20px; border-radius: 5px;">Home</a>
                 <a href="https://www.nashtechglobal.com/#contact-us-form" style=" text-decoration: none; font-size: 24px; font-weight: bold; padding: 10px 20px; border-radius: 5px;">Contact</a>
@@ -77,6 +78,45 @@ nav a {
     border-radius: 5px;
     color: #ffffff;
 }
+.logo {
+            width: 100px;
+            height: auto;
+        }
+
+        nav  {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav  {
+            display: inline;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .logo {
+    position: absolute; /* Positioning the logo absolutely */
+    top: 10px;          /* Adjust the distance from the top */
+    left: 10px;         /* Adjust the distance from the left */
+    width: 100px;       /* Optional: Adjust the size of the logo */
+}
+
+nav {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+
+
     </style>
 </head>
 <body>
