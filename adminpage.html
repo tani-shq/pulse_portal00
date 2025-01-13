@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Page</title>
+  <link rel="stylesheet" href="admin.css">
+  <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <nav>
+        <img src="Image/logo.png" alt="Logo" class="logo">
+        <ul>
+            <li><a href="/blog.html">Home</a></li>
+            <li><a href="https://www.nashtechglobal.com/#contact-us-form">Contact</a></li>
+            <li><a href="log.html">Login</a></li>
+        </ul>
+    </nav>
+  <div class="admin-page">
+    <header>
+      <h1>Posts</h1>
+      <button class="add-post" onclick="addPost()">Add a New Post</button>
+    </header>
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Views</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>IG’s DevOps 4 year journey</td>
+            <td>Anshika Bajpai</td>
+            <td>1</td>
+            <td>
+              <button class="edit-btn" onclick="editPost()">Edit</button>
+              <button class="delete-btn" onclick="deletePost(this)">Delete</button>
+              <button class="hide-btn" onclick="hidePost(this)">Hide</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Just Eat’s DevOps since 2010</td>
+            <td>Anshika Bajpai</td>
+            <td>1</td>
+            <td>
+              <button class="edit-btn" onclick="editPost()">Edit</button>
+              <button class="delete-btn" onclick="deletePost(this)">Delete</button>
+              <button class="hide-btn" onclick="hidePost(this)">Hide</button>
+            </td>
+          </tr>
+          <tr>
+            <td>HMRC DevOps at pace</td>
+            <td>Anshika Bajpai</td>
+            <td>1</td>
+            <td>
+              <button class="edit-btn" onclick="editPost()">Edit</button>
+              <button class="delete-btn" onclick="deletePost(this)">Delete</button>
+              <button class="hide-btn" onclick="hidePost(this)">Hide</button>
+            </td>
+          </tr>
+          <tr>
+          <td>DevOps Practices at Etsy</td>
+          <td>Anshika Bajpai</td>
+          <td>1</td>
+          <td>
+            <button class="edit-btn" onclick="editPost()">Edit</button>
+            <button class="delete-btn" onclick="deletePost(this)">Delete</button>
+            <button class="hide-btn" onclick="hidePost(this)">Hide</button>
+          </td>
+        </tr>
+        <td>The Daily Telegraph</td>
+          <td>Anshika Bajpai</td>
+          <td>1</td>
+          <td>
+            <button class="edit-btn" onclick="editPost()">Edit</button>
+            <button class="delete-btn" onclick="deletePost(this)">Delete</button>
+            <button class="hide-btn" onclick="hidePost(this)">Hide</button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+  <script src="script.js"></script>
+  <footer>
+    <div class="footer-container">
+        <img src="Image/logo.png" alt="Logo" class="logo2">
+      <div class="footer-column">
+        <h3>NashTech</h3>
+        <ul>
+          <li><a href="#contact">Contact us</a></li>
+          <li><a href="#careers">Careers</a></li>
+          <li><a href="#locations">Our locations</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Home</h3>
+        <ul>
+          <li><a href="#solutions">Our solutions</a></li>
+          <li><a href="#partners">Partners</a></li>
+          <li><a href="#thinking">Our thinking</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Useful links</h3>
+        <ul>
+          <li><a href="#accessibility">Accessibility statement</a></li>
+          <li><a href="#privacy">Privacy policy</a></li>
+          <li><a href="#slavery">Modern slavery policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Connect with us</h3>
+        <ul>
+          <li><a href="#linkedin">LinkedIn</a></li>
+          <li><a href="#twitter">Twitter</a></li>
+          <li><a href="#facebook">Facebook</a></li>
+          <li><a href="#youtube">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
