@@ -117,6 +117,9 @@ h1 {
 .published-date {
     display: inline-block;
 }
+.published-date {
+    margin-left: 100px;
+}
 .card {
     border-radius: 15px; 
     overflow: hidden; 
@@ -162,4 +165,5 @@ footer {
   .footer-column ul li a:hover {
     text-decoration: underline;
   }
+
   
