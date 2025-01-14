@@ -165,5 +165,22 @@ footer {
   .footer-column ul li a:hover {
     text-decoration: underline;
   }
+  .tags-section {
+    margin-top: 10px; /* Adjust spacing as needed */
+    font-family: Arial, sans-serif;
+}
+
+.tags-section h4 {
+    font-size: 10px
+    margin 0;
+    color: #333; /* Subheading color */
+}
+
+.tags {
+    font-size: 14px;
+    margin: 5px 0 0;
+    color: #000000; /* Text color for tags */
+    font-style:normal /* Optional: Style for emphasis */
+}
 
   
