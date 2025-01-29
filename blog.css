@@ -166,21 +166,28 @@ footer {
     text-decoration: underline;
   }
   .tags-section {
-    margin-top: 10px; /* Adjust spacing as needed */
+    margin-top: 10px; /* Adjust spacing if needed */
     font-family: Arial, sans-serif;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Align items vertically */
+    gap: 5px; /* Add spacing between "Tags:" and the text */
 }
 
 .tags-section h4 {
-    font-size: 10px
-    margin 0;
+    font-size: 18px; /* Match the size of tags */
+    margin: 0;
     color: #333; /* Subheading color */
 }
 
 .tags {
-    font-size: 14px;
-    margin: 5px 0 0;
-    color: #000000; /* Text color for tags */
-    font-style:normal /* Optional: Style for emphasis */
+    margin: 0; /* Remove extra margins */
+    color: #000000; /* Match the subheading color */
+    font-style: normal; /* Optional: Consistent style */
+    font-size: 14px; /* Match the size of the label */
+    font-family: Arial, sans-serif; /* Ensure font consistency */
 }
+
+
+
 
   
